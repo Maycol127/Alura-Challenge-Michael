@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Alura Challengue</title>
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Cabecera -->
+        <header class="cabecera">
+            <img src="./assets/Logo.png" alt="">
+        </header>
+        <!-- Cuerpo -->
+        <main class="contenido">
+            <div class="contenido-1">
+                <div class="cuadro">
+                    <textarea id="texto" class="textarea" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="alerta">
+                    <img class="imagen02" src="assets/bi_exclamation-circle-fill.png" alt="Advertencia">
+                    <small>Solo letras minúsculas y sin acentos</small>
+                </div>
+                <div class="botones">
+                    <button class="boton-1" onclick="encriptar()">Encriptar</button>
+                    <button class="boton-2" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="contenido-2">
+                <img id="imagen03" class="imagen03" src="./assets/Muñeco.png" alt="">
+                <h3 id="titulo">Ningún mensaje fue encontrado</h3>
+                <p id="subtitulo">Ingresa el texto que desees encriptar y desencriptar</p>
+                <p class="resultado" id="resultado" style="display: none;"></p>
+                <button class="boton-3" id="copiar" style="display: none">Copiar</button>
+            </div>
+        </main>
+    </div>
+    <!-- Pie de página -->
+    <footer class="pie">
+        Realizado por <strong class="strong">Michael Ninaja</strong> el 26/08/2024
+    </footer>
+    <!-- Javascript -->
+    <script src="./javascript/encriptador.js"></script>
+</body>
+</html>

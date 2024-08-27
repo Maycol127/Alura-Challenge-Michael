@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Tamño */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+/* Cabecera */
+.header{
+    width: 10%;
+}
+.imagen01{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contenedor - general */
+.contenedor{
+    min-height: 90%;
+    font-family:  "Inter", sans-serif;
+    display: flex;
+    padding: 2rem;
+    background-color: #F3F5FC;
+}
+/* Contenido */
+.contenido{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+/* Contenido-1 */
+.contenido-1{
+    min-height: auto;
+    width: 60%;
+    padding: 2rem;
+}
+.cuadro{
+    padding-top: 10%;
+    height: 92%;
+}
+.textarea::placeholder{
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    color: #0A3871;
+}
+.textarea{
+    font-size: 1.2rem;
+    min-height: 95%;
+    border: none;
+    background-color: #F3F5FC;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    overflow-y: auto;
+}
+.alerta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    user-select: none;
+}
+.imagen02{
+    margin-right: 5px;
+}
+/* Botones */
+.botones{
+    max-height: 100px;
+    height: 8%;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.boton-1{
+    min-width: 48%;
+    color: #F3F5FC;
+    background-color: #0A3871;
+    border-radius: 24px;
+}
+.boton-1:hover{
+    font-weight: bold;
+    transition:0.5s;
+    color: #0A3871;
+    background-color: greenyellow;
+}
+.boton-2{
+    min-width: 48%;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+}
+.boton-2:hover{
+    font-weight: bold;
+    transition:0.5s;
+    color: #F3F5FC;
+    background-color: salmon;
+}
+/* Contenido-2 */
+.contenido-2{
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+    width: 30%;
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+.imagen03{
+    max-width: 100%;
+    height: auto;
+}
+.resultado{
+    height: 92%;
+    text-align: left;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 1rem;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+.boton-3{
+    margin-top: 20px;
+    width: 100%;
+    max-height: 100px;
+    height: 8%;
+    border-radius: 24px;
+    justify-content: space-around;
+    cursor: pointer;
+    overflow: hidden;
+}
+.boton-3:hover{
+    font-weight: bold;
+    transition:0.5s;
+    color: #0A3871;
+    background-color: rgb(241, 241, 29);
+}
+
+/* Pie de página */
+.pie {
+    min-height: 10%;
+    background-color: #0A3871;
+    padding: 24px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+.strong {
+    color: #F3F5FC;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .contenido {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+    .contenido-1, .contenido-2 {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+    }
+    .contenido-1{
+        height: 800px;
+    }
+    .textarea {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .resultado {
+        width: 100%;
+        padding: 1rem;
+        max-height: 60%; /* Ajusta según el diseño necesario */
+    }
+    .botones, .boton-3 {
+        width: 100%;
+        max-width: 100%;
+    }
+    .contenido-2{
+        box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+    }
+    .alerta {
+        font-size: 0.9rem;
+    }
+    .boton-1, .boton-2 {
+        min-height: 15%;
+        min-width: 48%;
+        margin-bottom: 1rem;
+    }
+    .boton-3{
+        border: 1px solid #0A3871;
+        color: #0A3871;
+        background-color: white;
+        height: 50px;
+    }
+    #titulo{
+        padding: 8px;
+    }
+    #subtitulo{
+        color: #495057;
+    }
+    .imagen03{
+        display: none;
+    }
+    .cuadro {
+        padding-top: 5%;
+    }
+    .pie {
+        font-size: 1.5rem;
+        padding: 16px;
+    }
+}
+@media (max-width: 375px) {
+    .botones{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .boton-1, .boton-2{
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pie{
+        font-size: 1rem;
+    }
+}
